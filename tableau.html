@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de Bord - Articles</title>
+  <link rel="stylesheet" href="tableau.css">  <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>Tableau de Bord des Articles</h1>
+
+    <div id="articlesContainer">
+      <!-- Articles existants seront insérés ici -->
+    </div>
+
+    <button class="button" id="addArticleBtn">Ajouter un Article</button>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Mon Tableau de Bord | <a href="#">Contact</a></p>
+  </div>
+
+  <!-- Modale pour ajouter ou modifier un article -->
+  <div id="editor" class="editor">
+    <h2>Ajouter / Modifier un Article</h2>
+    <label for="newTitle">Titre :</label>
+    <input type="text" id="newTitle" placeholder="Entrez le titre ici">
+    
+    <label for="newAuthor">Auteur :</label>
+    <input type="text" id="newAuthor" placeholder="Entrez l'auteur ici">
+    
+    <label for="newSource">Source :</label>
+    <input type="text" id="newSource" placeholder="Entrez la source ici">
+
+    <label for="summary">Résumé de l'Article :</label><br>
+  <textarea id="summary" name="summary" rows="4" cols="50" placeholder="Écrivez votre résumé ici..." required></textarea><br><br>
+    
+    <label for="newDate">Date de publication :</label>
+    <input type="date" id="newDate">
+    
+    <button class="button" id="saveButton">Sauvegarder</button>
+    <button class="button" id="cancelButton">Annuler</button>
+  </div>
+
+  <script src="tableau.js"></script>  
+</body>
+</html>
